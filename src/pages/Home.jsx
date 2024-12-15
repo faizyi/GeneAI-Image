@@ -15,7 +15,7 @@ export const Home = () => {
         {/* Header Section */}
         <div className="text-center mb-6">
           <h1 className="text-gray-800 text-3xl md:text-4xl font-bold mb-2">
-            Explore Popular Posts in the Community!
+            Explore Popular Posts in the Community
           </h1>
           <h2 className="text-gray-600 text-lg md:text-xl font-medium">
             Generated with AI

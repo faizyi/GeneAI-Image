@@ -5,6 +5,8 @@ import { ImageGenerationCard } from "../components/ImageGenerationCard";
 export const Post = () => {
   const [imageGenerated, setImageGenerated] = useState(false);
   const [imagePrompt, setImagePrompt] = useState("");
+  const [authorName, setAuthorName] = useState("");
+
   const handleGenerateImage = () => {
     console.log(imagePrompt)
     console.log("Generating image...");
@@ -20,9 +22,13 @@ export const Post = () => {
       {/* Input Section */}
       <div className="flex flex-col lg:flex-row justify-between gap-6 mb-8">
         {/* Input Fields */}
-        <GenerateImageForm handleGenerateImage={handleGenerateImage}
-        imagePrompt={imagePrompt}
-        setImagePrompt={setImagePrompt}
+        <GenerateImageForm
+          handleGenerateImage={handleGenerateImage}
+          imagePrompt={imagePrompt}
+          setImagePrompt={setImagePrompt}
+          authorName={authorName}
+          setAuthorName={setAuthorName}
+          imageGenerated={imageGenerated}
         />
 
         {/* Image Generation Card */}
